@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="website">
+	<title>Ryan Wong</title>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="js/projecttabs.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<div class="nav nav-tabs">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">Portfolio</a></li>
+			<li class="active"><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Get in touch!</a></li>
+		</div>
+
+		<div class="container">
+
+			<div class="jumbotron">
+				<h1>Projects:</h1>
+				<p>All personal projects can be found
+				<a href="https://github.com/RMWong">here</a></p>
+			</div>
+
+
+
+			<section ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+					<li ng-class=" { active:tab.isSet(1) }"><a href="" ng-click="tab.setTab(1)">Personal</a></li>
+					<li ng-class=" { active:tab.isSet(2) }"><a href="" ng-click="tab.setTab(2)">Academic</a></li>
+				</ul>
+				
+				<div id="content">
+					<div ng-show="tab.isSet(1)">
+						<h4>Personal</h4>
+						<!-- Re-factor and use controllers -->
+						<p>List of my personal projects with their respective descriptions and GitHub link.</p>
+
+					</div>
+					<div ng-show="tab.isSet(2)">
+						<h4>Academic</h4>
+						<p>List of my academic projects with their respective descriptions (no GitHub link).</p>
+
+						<ul>
+							<li>
+								<p>Coming Soon...</p>
+							</li>
+
+						<ul>
+							
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

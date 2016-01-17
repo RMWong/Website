@@ -1,10 +1,90 @@
+/* Nav tab on top of screen */
 .nav a {
-	color: #5a5a5a;
+	color: white;
+	/*color: black;*/
 	font-size: 20px;
 	font-weight: bold;
 	padding: 14px 10px;
 }
 
+.nav li.active > a {
+}
+
 .nav li {
 	display: inline;
+}
+
+.nav-tabs {
+	/*background-color: #5a5a5a;*/
+	background-color: #252839;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li.active > a {
+	/*color: #5a5a5a;*/
+	color:#252839;
+}
+
+/*Nav pills for project page*/
+
+.nav-pills > li {
+	background-color: #677077;
+}
+
+.nav-pills > li > a:hover {
+	/*background-color: #5a5a5a;*/
+	background-color: #252839;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+	color:white;
+	/*background-color:#5a5a5a;*/
+	background-color:#252839;
+}
+
+/* Typed text on home page */
+#cursor {
+	float:right;
+	display:inline-block;
+	position: auto;
+	word-wrap: break-word;
+}
+
+
+.type-container {
+	margin:auto;
+	float:left;
+	font-size: 60px;
+	font-family:'Droid Serif', serif;
+}
+
+#content {
+	
+}
+
+/* Jumbotron */
+.jumbotron {
+	/*position: relative;
+	height: auto;*/
+	border: 2px solid #b5b5b7;
+	font-family:'Droid Serif', serif;
+	padding: 10px;
+	margin: 10px;
+	width:100%;
+}
+
+body {
+	background-color: #f6f1ed;
+}
+
+.content {
+	/*margin:auto;
+*/	width: 56%;
+	border: 2px solid #b5b5b7;
+	padding: 10px;
+	font-family: 'Droid Sans', sans;
+}
+
+.container {
+	position: relative;
+	height: auto;
 }
